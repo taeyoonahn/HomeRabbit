@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "878851975164",
+    "project_id": "homerabbit-9a521",
+    "storage_bucket": "homerabbit-9a521.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:878851975164:android:acb2e8a4786be7a4d93479",
+        "android_client_info": {
+          "package_name": "com.homerabbit.app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "878851975164-5mh3hj12i9s23gm1trata7tuohoo9nvu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.homerabbit.app",
+            "certificate_hash": "257466d87ceb14789d9b10982d1a43616130c7d0"
+          }
+        },
+        {
+          "client_id": "878851975164-3mq8d28st23ll4hi217ghdb7d53gq5jd.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAnfhGbLi-NLOIcXUgN1rjRnhZn-Wg6X2E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "878851975164-3mq8d28st23ll4hi217ghdb7d53gq5jd.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "878851975164-dl8uecs9cb3v697u8jv39tj2c627g6o2.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.homerabbit.homeRabbit"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
