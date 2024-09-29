@@ -25,7 +25,8 @@ class HomeView extends StatelessWidget {
     return Consumer2<ServiceUserViewModel, HouseViewModel>(
       builder: (context, serviceUserViewModel, houseViewModel, child) {
         return serviceUserViewModel.user != null
-            ? (!serviceUserViewModel.isSubscribed
+            ? (
+            !serviceUserViewModel.isSubscribed
             ? Scaffold(
             resizeToAvoidBottomInset: false,
             floatingActionButton: Row(
@@ -246,7 +247,8 @@ class HomeView extends StatelessWidget {
               ],
             ),
           ),
-        ))
+        )
+        )
             : Scaffold(
           appBar: const MainAppBar(
             text: '집토끼',

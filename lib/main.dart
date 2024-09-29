@@ -3,6 +3,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:go_router/go_router.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
+import 'package:home_rabbit/data/data_source/house_data_source.dart';
 import 'package:home_rabbit/presentation/view_model/router_view_model.dart';
 import 'package:provider/provider.dart';
 import 'package:home_rabbit/di/provider_di.dart';
@@ -19,6 +20,7 @@ Future<void> main() async {
   await Firebase.initializeApp(options: DefaultFirebaseOptions.currentPlatform,);
   final providers = await providerDi();
   MobileAds.instance.initialize();
+  await HouseDataSource.init();
   runApp(
     MultiProvider(
       providers: providers,

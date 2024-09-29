@@ -23,7 +23,6 @@ import 'package:home_rabbit/domain/use_case/sign_use_case/apple_log_in_use_case.
 import 'package:home_rabbit/domain/use_case/sign_use_case/apple_log_out_use_case.dart';
 import 'package:home_rabbit/domain/use_case/sign_use_case/google_log_in_use_case.dart';
 import 'package:home_rabbit/domain/use_case/sign_use_case/google_log_out_use_case.dart';
-import 'package:home_rabbit/domain/use_case/system_info_use_case/get_info_text_use_case.dart';
 import 'package:home_rabbit/domain/use_case/system_info_use_case/get_result_info_texts_use_case.dart';
 import 'package:home_rabbit/domain/use_case/use_cases.dart';
 import 'package:home_rabbit/presentation/view_model/ad_mob_view_model.dart';
@@ -59,7 +58,6 @@ Future<List<SingleChildWidget>> providerDi() async {
     googleLogInUseCase: GoogleLogInUseCase(signDomainRepository),
     appleLogOutUseCase: AppleLogOutUseCase(signDomainRepository),
     googleLogOutUseCase: GoogleLogOutUseCase(signDomainRepository),
-    getInfoTextUseCase: GetInfoTextUseCase(systemInfoDomainRepository),
     getResultInfoTextsUseCase: GetResultInfoTextsUseCase(systemInfoDomainRepository),
   );
 

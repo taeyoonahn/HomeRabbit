@@ -27,7 +27,6 @@ class SignDataSource {
         AppleIDAuthorizationScopes.fullName,
       ],
     );
-    print("sex2");
     final oauthCredential = OAuthProvider("apple.com").credential(
       idToken: appleCredential.identityToken,
       accessToken: appleCredential.authorizationCode,

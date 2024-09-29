@@ -16,7 +16,6 @@ class SystemInfoViewModel with ChangeNotifier {
     _currentQuestionInfoFactor = currentQuestionInfoFactor;
     notifyListeners();
   }
-
   List<String> doubleAgentContractResultDetailString = [];
   List<String> duplicateContractResultDetailString = [];
   List<String> financialRiskResultDetailString = [];
@@ -33,15 +32,9 @@ class SystemInfoViewModel with ChangeNotifier {
   List<Widget> realEstateAgentScamResultDetail = [];
   List<Widget> taxEvasionResultDetail = [];
   List<Widget> trustCompanyResultDetail = [];
-
   SystemInfoViewModel(this.useCases);
 
-  Future<String> getInfoText(String id) async {
-    Future<String> infoText = useCases.getInfoTextUseCase(id);
-    return infoText;
-  }
-
-  void fetchResultInfoTexts() async {
+  Future<void> fetchResultInfoTexts() async {
     doubleAgentContractResultDetailString =
     await useCases.getResultInfoTextsUseCase('doubleAgentContract');
     doubleAgentContractResultDetail = doubleAgentContractResultDetailString

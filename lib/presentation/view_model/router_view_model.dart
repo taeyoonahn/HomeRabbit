@@ -11,7 +11,7 @@ import 'package:home_rabbit/presentation/view/second_input_view.dart';
 import 'package:home_rabbit/presentation/view/splash_view.dart';
 import 'package:home_rabbit/presentation/view/system_info_view.dart';
 import 'package:home_rabbit/presentation/view/third_input_view.dart';
-import 'package:home_rabbit/presentation/view/user_info_view.dart';
+import 'package:home_rabbit/presentation/view/service_user_info_view.dart';
 
 class RouterViewModel extends ChangeNotifier {
   final GoRouter _goRouter = GoRouter(
@@ -90,8 +90,8 @@ class RouterViewModel extends ChangeNotifier {
           StatefulShellBranch(
             routes: <RouteBase>[
               GoRoute(
-                path: '/userInfo',
-                builder: (context, state) => const UserInfoView(),
+                path: '/serviceUserInfo',
+                builder: (context, state) => const ServiceUserInfoView(),
                 routes: <RouteBase>[
                   GoRoute(
                     path: 'systemInfo',

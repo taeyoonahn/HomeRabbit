@@ -6,11 +6,6 @@ class SystemInfoDataRepository implements SystemInfoDomainRepository {
   SystemInfoDataRepository(this.systemInfoDataSource);
 
   @override
-  Future<String> getInfoText(String id) {
-    return systemInfoDataSource.getInfoText(id);
-  }
-
-  @override
   Future<List<String>> getResultInfoTexts(String id) {
     return systemInfoDataSource.getResultInfoTexts(id);
   }

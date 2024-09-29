@@ -11,7 +11,6 @@ import 'package:home_rabbit/domain/use_case/sign_use_case/apple_log_in_use_case.
 import 'package:home_rabbit/domain/use_case/sign_use_case/apple_log_out_use_case.dart';
 import 'package:home_rabbit/domain/use_case/sign_use_case/google_log_in_use_case.dart';
 import 'package:home_rabbit/domain/use_case/sign_use_case/google_log_out_use_case.dart';
-import 'package:home_rabbit/domain/use_case/system_info_use_case/get_info_text_use_case.dart';
 import 'package:home_rabbit/domain/use_case/system_info_use_case/get_result_info_texts_use_case.dart';
 
 class UseCases {
@@ -28,7 +27,6 @@ class UseCases {
   final GoogleLogOutUseCase googleLogOutUseCase;
   final AppleLogInUseCase appleLogInUseCase;
   final AppleLogOutUseCase appleLogOutUseCase;
-  final GetInfoTextUseCase getInfoTextUseCase;
   final GetResultInfoTextsUseCase getResultInfoTextsUseCase;
 
   UseCases({
@@ -45,7 +43,6 @@ class UseCases {
     required this.googleLogOutUseCase,
     required this.appleLogInUseCase,
     required this.appleLogOutUseCase,
-    required this.getInfoTextUseCase,
     required this.getResultInfoTextsUseCase,
   });
 }

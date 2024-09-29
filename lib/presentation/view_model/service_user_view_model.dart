@@ -43,7 +43,9 @@ class ServiceUserViewModel with ChangeNotifier {
       await useCases.addServiceUserUseCase(_user!);
     }
     isSubscribed = await getIsSubscribed();
-    context.go('/userInfo');
+    if (context.mounted) {
+      context.go('/serviceUserInfo');
+    }
     notifyListeners();
   }
 
@@ -108,11 +110,14 @@ class ServiceUserViewModel with ChangeNotifier {
     String userNullSignal = "NULL";
     final user = this.user;
     if(user !=null) {
+      print("sex1");
       if(user.displayName==null) {
+        print("sex2");
         return userNullSignal;
       }
       return user.displayName!;
     } else {
+      print("sex3");
       return userNullSignal;
     }
   }
