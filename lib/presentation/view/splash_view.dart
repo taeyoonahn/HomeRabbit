@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:home_rabbit/presentation/view_model/house_view_model.dart';
+import 'package:home_rabbit/presentation/view_model/in_app_purchase_view_model.dart';
 import 'package:provider/provider.dart';
 
 import '../view_model/system_info_view_model.dart';
@@ -12,10 +13,12 @@ class SplashView extends StatelessWidget {
   Widget build(BuildContext context) {
     final houseViewModel = context.read<HouseViewModel>();
     final systemInfoViewModel = context.read<SystemInfoViewModel>();
+    //final inAppPurchaseViewModel = context.read<InAppPurchaseViewModel>();
 
     Future.delayed(const Duration(seconds: 2), () async {
       await houseViewModel.fetchHouse();
       systemInfoViewModel.fetchResultInfoTexts();
+      //await inAppPurchaseViewModel.configureSDK();
       if (context.mounted) {
         context.go('/home');
       }
